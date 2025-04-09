@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 98%;
+    --foreground: 220 10% 36%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 220 10% 36%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 10% 36%;
+    
+    --primary: 220 60% 15%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 47 59% 55%;
+    --secondary-foreground: 220 60% 15%;
+    
+    --muted: 40 20% 96%;
+    --muted-foreground: 220 10% 56%;
+    
+    --accent: 47 59% 55%;
+    --accent-foreground: 220 60% 15%;
+    
+    --destructive: 346 74% 31%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 47 59% 55%;
+    
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 220 60% 15%;
+    --foreground: 0 0% 95%;
+    
+    --card: 224 71% 4%;
+    --card-foreground: 0 0% 95%;
+    
+    --popover: 224 71% 4%;
+    --popover-foreground: 0 0% 95%;
+    
+    --primary: 0 0% 100%;
+    --primary-foreground: 222 47% 11%;
+    
+    --secondary: 47 59% 55%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 220 64% 20%;
+    --muted-foreground: 217 33% 75%;
+    
+    --accent: 47 59% 55%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 95%;
+    
+    --border: 217 33% 25%;
+    --input: 217 33% 25%;
+    --ring: 47 59% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-montserrat antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply relative hover:text-secondary transition-colors duration-300;
+  }
+  
+  .nav-link::after {
+    @apply content-[''] absolute w-0 h-0.5 bg-secondary left-0 -bottom-1 transition-all duration-300;
+  }
+  
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+  
+  .gallery-img {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  
+  .gallery-img:hover {
+    @apply scale-105;
+  }
+  
+  .facility-card {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-radial {
+    background-image: radial-gradient(var(--tw-gradient-stops));
+  }
+}

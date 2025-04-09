@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="600" viewBox="0 0 600 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(0, 0)">
+    <!-- Kerala Kathakali headgear (circular part) -->
+    <g>
+      <!-- Text "THE KERALA CLUB" in circular form -->
+      <path d="M300,105 A195,195 0 1,1 299,105" fill="none"/>
+      <text font-family="Arial, sans-serif" font-weight="bold" font-size="48" fill="#E21A22">
+        <textPath href="#circular-text-path" startOffset="10%">THE KERALA CLUB</textPath>
+      </text>
+      
+      <!-- Main headgear (kathakali face) -->
+      <circle cx="300" cy="300" r="140" fill="#E21A22"/>
+      <path d="M300,440 C230,430 200,380 220,330 C240,280 260,240 300,200 C340,240 360,280 380,330 C400,380 370,430 300,440Z" fill="#E21A22"/>
+      
+      <!-- Decorative patterns (simplified) -->
+      <circle cx="300" cy="300" r="125" stroke="white" stroke-width="5" fill="none"/>
+      <circle cx="300" cy="300" r="100" stroke="white" stroke-width="3" fill="none"/>
+      
+      <!-- Small white decorative circles -->
+      <g fill="white">
+        <!-- Top row -->
+        <circle cx="300" cy="200" r="8"/>
+        <circle cx="260" cy="210" r="8"/>
+        <circle cx="340" cy="210" r="8"/>
+        <!-- Middle row -->
+        <circle cx="230" cy="250" r="8"/>
+        <circle cx="270" cy="250" r="8"/>
+        <circle cx="330" cy="250" r="8"/>
+        <circle cx="370" cy="250" r="8"/>
+        <!-- Lower row -->
+        <circle cx="245" cy="290" r="8"/>
+        <circle cx="285" cy="290" r="8"/>
+        <circle cx="325" cy="290" r="8"/>
+        <circle cx="365" cy="290" r="8"/>
+        <!-- Bottom decorations -->
+        <circle cx="275" cy="330" r="5"/>
+        <circle cx="325" cy="330" r="5"/>
+      </g>
+      
+      <!-- Face-like patterns at the bottom -->
+      <path d="M300,370 C280,360 275,350 285,340 C295,330 305,330 315,340 C325,350 320,360 300,370Z" fill="white"/>
+      <rect x="280" y="380" width="40" height="20" rx="5" fill="white"/>
+    </g>
+    
+    <!-- Established text -->
+    <text x="300" y="500" font-family="Arial, sans-serif" font-weight="bold" font-size="30" text-anchor="middle" fill="#000000">Estd. : 1932</text>
+    
+    <!-- Coimbatore text in red box -->
+    <rect x="220" y="520" width="160" height="40" fill="#E21A22"/>
+    <text x="300" y="547" font-family="Arial, sans-serif" font-weight="bold" font-size="30" text-anchor="middle" fill="white">Coimbatore</text>
+  </g>
+  
+  <!-- Path for circular text -->
+  <path id="circular-text-path" d="M300,105 A195,195 0 1,1 299,105" fill="none"/>
+</svg>
